@@ -133,22 +133,22 @@ public class Main {
         // Определение минимального числа
         int min = Math.min(Math.min(a,b),Math.min(c,d));
         //создадим переменную с заведомо большим числом
-        int answer = 1 << 31-1;
+        int ans = 1 << 31-1;
         //Если число не минимально,то запихиваем ее в переменную.
         //Сделав так с каждым числом,в итоге получим минимальное из оставшихся трех
         if (a != min) {
-            answer=Math.min(a, answer);
+            ans=Math.min(a, ans);
         }
         if (b!=min){
-            answer=Math.min(b,answer);
+            ans=Math.min(b,ans);
         }
         if (c!=min){
-            answer=Math.min(c,answer);
+            ans=Math.min(c,ans);
         }
         if (d!=min){
-            answer=Math.min(d,answer);
+            ans=Math.min(d,ans);
         }
-        out.println(answer);
+        out.println(ans);
     }
 }
 '''
