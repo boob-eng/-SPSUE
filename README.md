@@ -92,23 +92,23 @@
 graph TD
    A([Начало]) --> B[/Ввести: a, b, c, d/]
    B --> C[/Найти минимум из a,b,c,d/]
-   C --> D[/большая переменная "answer"/]
+   C --> D[/большая переменная "ans"/]
    D --> E{a!=min}
-   E -- Да --> F[/"answer=Math.min(a, answer)"/]
+   E -- Да --> F[/"ans=Math.min(a, ans)"/]
    E -- Нет --> G[/Ничего/]
    F --> H{b!=min}
    G --> H
-   H -- Да --> I[/"answer=Math.min(b,answer)"/]
+   H -- Да --> I[/"ans=Math.min(b,ans)"/]
    H -- Нет --> J[/Ничего/]
    I --> K{c!=min}
    J --> K
-   K -- Да --> L[/"answer=Math.min(c,answer)"/]
+   K -- Да --> L[/"ans=Math.min(c,ans)"/]
    K -- Нет --> M[/Ничего/]
    L --> N{d!=min}
    M --> N
-   N -- Да --> O[/"answer=Math.min(d,answer)"/]
+   N -- Да --> O[/"ans=Math.min(d,ans)"/]
    N -- Нет --> P[/Ничего/]
-   O --> Q[/Вывод: answer/]
+   O --> Q[/Вывод: ans/]
    P --> Q
    Q --> Z([Конец])
 
