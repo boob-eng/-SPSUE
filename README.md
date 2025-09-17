@@ -68,8 +68,8 @@
 ```mermaid
 graph TD
    A([Начало]) --> B[/Ввести: a, b, c, d/]
-   B --> C[Найти min = минимум из a, b, c, d]
-   C --> D[answer="пусто"]
+   B --> C[/Найти min = минимум из a, b, c, d/]
+   C --> D[/answer="пусто"/]
    D --> E{a!=min?}
    E -- Да --> F[/Если second пуст → second = a, иначе second = min(second, a)/]
    E -- Нет --> G[/Ничего/]
@@ -87,6 +87,6 @@ graph TD
    N -- Нет --> P[/Ничего/]
    O --> Q[/Вывод: second/]
    P --> Q
-   Q --> Z(([Конец]))
+   Q --> Z([Конец])
 
 ```
