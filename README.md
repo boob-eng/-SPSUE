@@ -69,8 +69,8 @@
 graph TD
    A(([Начало])) --> B[/Ввести: a, b, c, d/]
    B --> C[Найти min = минимум из a, b, c, d]
-   C --> D[second = "пусто"]
-   D --> E{a != min?}
+   C --> D[answer="пусто"]
+   D --> E{a!=min?}
    E -- Да --> F[/Если second пуст → second = a, иначе second = min(second, a)/]
    E -- Нет --> G[/Ничего/]
    F --> H{b != min?}
