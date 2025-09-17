@@ -100,11 +100,11 @@ graph TD
    G --> H
    H -- Да --> I[/"answer=Math.min(b,answer)"/]
    H -- Нет --> J[/Ничего/]
-   I --> K{c!=min?}
+   I --> K{c!=min}
    J --> K
    K -- Да --> L[/"answer=Math.min(c,answer)"/]
    K -- Нет --> M[/Ничего/]
-   L --> N{d!=min?}
+   L --> N{d!=min}
    M --> N
    N -- Да --> O[/"answer=Math.min(d,answer)"/]
    N -- Нет --> P[/Ничего/]
