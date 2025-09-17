@@ -75,7 +75,7 @@ graph TD
    E -- Нет --> G[/Ничего/]
    F --> H{b != min?}
    G --> H
-   H -- Да --> I[/Если second пуст → second = b, иначе second = min(second, b)/]
+   H -- Да --> I[/Если second пуст → second = b)/]
    H -- Нет --> J[/Ничего/]
    I --> K{c != min?}
    J --> K
