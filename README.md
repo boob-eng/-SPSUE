@@ -96,19 +96,19 @@ graph TD
    D --> E{a!=min}
    E -- Да --> F[/"answer=Math.min(a, answer)"/]
    E -- Нет --> G[/Ничего/]
-   F --> H{b != min}
+   F --> H{b!=min}
    G --> H
    H -- Да --> I[/"answer=Math.min(b,answer)"/]
    H -- Нет --> J[/Ничего/]
-   I --> K{c != min?}
+   I --> K{c!=min?}
    J --> K
    K -- Да --> L[/"answer=Math.min(c,answer)"/]
    K -- Нет --> M[/Ничего/]
-   L --> N{d != min?}
+   L --> N{d!=min?}
    M --> N
    N -- Да --> O[/"answer=Math.min(d,answer)"/]
    N -- Нет --> P[/Ничего/]
-   O --> Q[/Вывод: second/]
+   O --> Q[/Вывод: answer/]
    P --> Q
    Q --> Z([Конец])
 
