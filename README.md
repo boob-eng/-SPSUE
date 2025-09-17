@@ -91,7 +91,7 @@
 ```mermaid
 graph TD
    A([Начало]) --> B[/Ввести: a, b, c, d/]
-   B --> C[/Найти минимум из a,b,c,d/]
+   B --> C[/Найти min из a,b,c,d/]
    C --> D[/большая переменная "ans"/]
    D --> E{a!=min}
    E -- Да --> F[/"ans=Math.min(a, ans)"/]
