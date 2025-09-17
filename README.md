@@ -116,7 +116,7 @@ graph TD
 
 ### 5. Программа
 
-'''java
+```java
 import java.io.PrintStream;
 import java.util.Scanner;
 public class Main {
@@ -151,7 +151,7 @@ public class Main {
         out.println(ans);
     }
 }
-'''
+```
 ### 6. Анализ правильности решения
 
 Программа работает корректно на всем множестве решений с учетом ограничений.
