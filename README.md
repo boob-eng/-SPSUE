@@ -67,17 +67,26 @@
 
 ```mermaid
 graph TD
-    A([Начало]) --> B[/Ввести: x, y/]
-    B --> C{x >= y}
-    C -- Нет --> D{y >= 0}
-    D -- Нет --> E[/Вывод: -y/]
-    D -- Да --> H[/Вывод: y/]
-    C -- Да --> I{x >= 0}
-    I -- Нет --> J[/Вывод: -x/]
-    I -- Да --> K[/Вывод: x/]
-    J --> Z
-    K --> Z
-    H --> Z
-    E --> Z([Конец])
+   A(([Начало])) --> B[/Ввести: a, b, c, d/]
+   B --> C[Найти min = минимум из a, b, c, d]
+   C --> D[second = "пусто"]
+   D --> E{a != min?}
+   E -- Да --> F[/Если second пуст → second = a, иначе second = min(second, a)/]
+   E -- Нет --> G[/Ничего/]
+   F --> H{b != min?}
+   G --> H
+   H -- Да --> I[/Если second пуст → second = b, иначе second = min(second, b)/]
+   H -- Нет --> J[/Ничего/]
+   I --> K{c != min?}
+   J --> K
+   K -- Да --> L[/Если second пуст → second = c, иначе second = min(second, c)/]
+   K -- Нет --> M[/Ничего/]
+   L --> N{d != min?}
+   M --> N
+   N -- Да --> O[/Если second пуст → second = d, иначе second = min(second, d)/]
+   N -- Нет --> P[/Ничего/]
+   O --> Q[/Вывод: second/]
+   P --> Q
+   Q --> Z(([Конец]))
 
 ```
